@@ -419,10 +419,8 @@ class FreeplayState extends MusicBeatState
 				addWeek(['Enter Terminal'], 17, ['terminal']);
 			case 'bob-and-ron':
 				if (FlxG.save.data.cheatingFound)
-				   if (diff == 'freeplay_hard')
 					addWeek(['Cheating-Bob'], 24, ['bob-3d']);
 					addWeek(['Cheating-Ron'], 25, ['ron-3d']);
-				   if (diff == 'freeplay_hell')
 					addWeek(['Cheating-Bob-Hell'], 26, ['bob-3d-hell']);
 					addWeek(['Cheating-Ron-Hell'], 27, ['ron-3d-hell']);
 		}
@@ -841,20 +839,6 @@ class FreeplayState extends MusicBeatState
 						diff = LanguageManager.getTextString('freeplay_fucked');
 					default:
 						diff = LanguageManager.getTextString('freeplay_hard');
-				}
-			case 2:
-				if (songs[curSelected].week == 24) {
-					diff = LanguageManager.getTextString('freeplay_hard');
-				}
-				else {
-					diff = LanguageManager.getTextString('freeplay_hell');
-				}
-			case 3:
-				if (songs[curSelected].week == 25) {
-					diff = LanguageManager.getTextString('freeplay_hard');
-				}
-				else {
-					diff = LanguageManager.getTextString('freeplay_hell');
 				}
 		}
 		diffText.text = diff + " - " + curChar.toUpperCase();
