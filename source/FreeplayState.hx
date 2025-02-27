@@ -141,8 +141,12 @@ class FreeplayState extends MusicBeatState
 		'vs-dave-thanksgiving',
 		'bonkers',
 		'duper',
-        'omission',
-		'doge-vs-bambi'
+                'omission',
+		'doge-vs-bambi',
+		'Cheating-Bob',
+		'Cheating-Ron',
+		'Cheating-Bob-Hell',
+	        'Cheating-Ron-Hell'
 	];
 
 	private var camFollow:FlxObject;
